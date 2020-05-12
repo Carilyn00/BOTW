@@ -42,7 +42,7 @@ public abstract class BrandDaoTest {
 		types[0].setName("Null Komma Josef");
 		types[0].setAlcoholLevel(5);
 		types[1] = new BeerType();
-		types[1].setName("Helle Freude");
+		types[1].setName("Testing Korean Beer");
 		types[1].setAlcoholLevel(1);
 		expectedBrand.setBeerTypes(Arrays.asList(types));
 	}
