@@ -1,8 +1,0 @@
-node{}
-  stage('SCM Checkout'){
-    git 'https://github.com/Carilyn00/BOTW/new/master/Beers-of-the-World-master/beeroftheworld'
-  }
-  stage('Compile-Package'){
-    sh 'mvn package'
-  }
-}
