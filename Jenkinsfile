@@ -1,4 +1,4 @@
-node{}
+node{
   stage('SCM Checkout'){
     git 'https://github.com/Carilyn00/BOTW'
   }
