@@ -3,6 +3,9 @@ pipeline {
     tools {
         maven 'Maven 3.6.3'
     }
+    options {
+      timeout(time: 60, unit: 'SECONDS') 
+  }
     
     stages {
         stage ('Compile Stage') {
@@ -11,7 +14,7 @@ pipeline {
             }    
          }
                           
-         stage ('Testing Stage') {
+        stage ('Testing Stage') {
            steps {
                  echo 'Testing Stage'
             }
